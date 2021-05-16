@@ -22,4 +22,4 @@ const comment = async () => {
 
 document
   .querySelector('#commentBtn')
-  .addEventListener('submit', comment())
+  .addEventListener('click', comment())
