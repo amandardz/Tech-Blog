@@ -37,7 +37,7 @@ To begin, as a developer, think about how the user will interact with the applic
 <img src='public\images\post-commentpage.png' alt='Image of Post/Comment Page'>
 5. The user will be logged out from session after being idle for a while or chooses to log out. 
 
-
+<br>
 [Click here to see deployed application](https://lit-hamlet-06660.herokuapp.com/)
 
 ## License
