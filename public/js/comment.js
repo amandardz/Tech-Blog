@@ -1,12 +1,13 @@
-const comment = async () => {  
+const comment = async (event) => {  
+  event.preventDefault();
 
   const comment = document.querySelector('#comment-content').value.trim();
 
   if (comment) {
     console.log(comment)
-    const response = await fetch(`/api/comments/posts`, {
+    const response = await fetch(`/api/comments`, {
       method: 'POST',
-      body: JSON.stringify({ comment }),
+      body: JSON.stringify({ content: comment }),
       headers: { 
         'Content-Type': 'application/json',
       },
@@ -22,4 +23,4 @@ const comment = async () => {
 
 document
   .querySelector('#commentBtn')
-  .addEventListener('click', comment())
+  .addEventListener('click', comment)

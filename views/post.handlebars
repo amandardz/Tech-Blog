@@ -9,31 +9,14 @@
 </div>
 
 <div class="form-box">
-  <form class="form" onsubmit="event.preventDefault(); comment();">
+  <form class="form">
     <div class="form-group">
       <textarea class="form-input" id="comment-content" name="comment-content" placeholder="Post a comment"></textarea>
     </div>
     <div class="form-group">
-      <button type="submit" class="btn btn-primary" id="commentBtn">Post</button>
+      <button type="click" class="btn btn-primary" id="commentBtn">Post</button>
     </div>
   </form>
 </div>
-
-  {{#if comments.length}}
-  <div class="col-md-6 post-list">
-    <h3>Current Comments:</h3>
-
-    {{#each comments as |comment|}}
-    <div class="row mb-2">
-      <div class="col-md-8">
-        <h4><a href="/comments/{{comment.id}}">{{comment.content}}</a></h4>
-      </div>
-      <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{comment.id}}">DELETE</button>
-      </div>
-    </div>
-    {{/each}}
-  </div>
-  {{/if}}
 
 <script src="/js/comment.js"></script>
