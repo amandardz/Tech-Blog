@@ -5,7 +5,7 @@ const comment = async (event) => {
 
   if (comment) {
     console.log(comment)
-    const response = await fetch(`/api/comments`, {
+    const response = await fetch(`/api/comments/posts`, {
       method: 'POST',
       body: JSON.stringify({ content: comment }),
       headers: { 
@@ -14,9 +14,25 @@ const comment = async (event) => {
     });
 
     if (response.ok){
-      document.location.replace('/posts')
+      document.location.reload()
     } else {
       alert('Failed to add comment')
+    }
+  }
+};
+
+const delComment = async (event) => {
+  if (event.target.hasAttribute('data-id')) {
+    const id = event.target.getAttribute('data-id');
+    
+    const response = await fetch(`/api/comments/${id}`, {
+      method: 'DELETE',
+    });
+
+    if (response.ok) {
+      document.location.reload();
+    } else {
+      alert('Failed to delete comment');
     }
   }
 };
@@ -24,3 +40,7 @@ const comment = async (event) => {
 document
   .querySelector('#commentBtn')
   .addEventListener('click', comment)
+
+document
+  .querySelector('#comment-delete')
+  .addEventListener('click', delComment)

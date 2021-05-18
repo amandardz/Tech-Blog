@@ -17,6 +17,19 @@
       <button type="click" class="btn btn-primary" id="commentBtn">Post</button>
     </div>
   </form>
+
+  {{#each comments}}
+  <div class="row mb-2">
+    <div class="col-md-8">
+      <p>
+        {{content}} on {{format_date createdAt}} by {{user.username}}
+      </p>
+    </div>
+    <div class="col-md-4">
+      <button class="btn btn-sm btn-danger" id="comment-delete" data-id="{{id}}">DELETE</button>
+    </div>
+  </div>
+  {{/each}}
 </div>
 
 <script src="/js/comment.js"></script>
