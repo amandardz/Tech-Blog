@@ -39,12 +39,10 @@ To begin, as a developer, think about how the user will interact with the applic
 
 <br>
 
-[Click here to see deployed application](https://agile-mountain-00609.herokuapp.com/)
-
 ## License
 MIT License
 
-Copyright (c) [2021] [Amanda Rodriguez]
+Copyright (c) 2021 Amanda Rodriguez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
