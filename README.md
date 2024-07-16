@@ -3,6 +3,11 @@
 ## Description
 In this repository, the developer will create a CMS-style blog site for users to write, publish, view, and comment blog post.
 
+## Video Demonstration
+Click on the image to view video <br>
+<a href="https://www.youtube.com/watch?v=w-3b-WmLRHs" target='_blank'>[![Video Demonstration](https://img.youtube.com/vi/w-3b-WmLRHs/0.jpg)](https://www.youtube.com/watch?v=w-3b-WmLRHs)
+</a>
+
 ## Installation
 1. Create a folder on desktop to download repository to.
 2. Copy the link to repository from GitHub.
